@@ -25,7 +25,11 @@ function setHour(t_clock) {
     secs = "0" + secs.toString();
 
 
-    t_clock.innerHTML = `${hours}:${mins}:${secs}`;
+    var actual_time = `${hours}:${mins}:${secs}`;
+
+    t_clock.innerHTML = actual_time;
+    
+    document.title = actual_time;
    }
 
 
